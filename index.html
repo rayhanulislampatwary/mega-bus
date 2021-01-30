@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+    <!----------font awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -------->
+    <link rel="stylesheet" href="style.css">
+    <!----------bootstrap---->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+
+    <main id="booking-area">
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!----------------Booking Section---------------------->
+        
+            <div class="main-content container ">
+                
+                <div class="booking-content">
+                    <h1>Mega City Bus</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+
+
+            
+            <div class="booking-form">
+                <h3>Explore By Bus</h3>
+
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">From</label>
+                        <input class="inp-style" type="text" name="" placeholder="Dhaka">
+                    </div>
+                    <div class="input-group">
+                        <label" for="">From</label>
+                        <input class="inp-style" type="text" name="" placeholder="Chittagone">
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                </div>
+
+
+
+
+
+            <div class="inputs"> 
+                <div>
+                    <div>
+                        <label for="">First Class ($150)</label> <br>
+                        <div class="d-flex justify-content-center">
+                        <button onclick="handleBusRentChange('firstClass', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                        <input id="firstClass-count" type="text" class="form-control text-center" value="1">
+                        <button onclick="handleBusRentChange('firstClass', true)" class="btn btn-default"><i class="fas fa-plus"></i></button> <br>
+                    </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Total First Class Price</p>
+                        <h6 id="firstClass-total" class="total-tickat-price">$150</h6>
+                    </div>
+                 </div>
+                <div>
+                    <div>
+                        <label for="">Economy ($100)</label> <br>
+                            <div class="d-flex justify-content-center">
+                            <button onclick="handleBusRentChange('economyClass', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                            <input id="economyClass-count" type="text" class="form-control text-center" value="1">
+                            <button onclick="handleBusRentChange('economyClass', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                            <br>
+                            </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                    <p>Total Economy Price</p>
+                    <h6 id="economyClass-total" class="total-tickat-price">$100</h6>
+                    </div>
+                </div>
+
+            </div> 
+
+            <div class="calculations p-3">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p id="total-sub-rent">$250</p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>VAT (10%) </p>
+                    </div>
+                    <div class="right">
+                        <p id="tax-amount">$25</p>
+                    </div>
+                </div>
+                <br>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p id="grand-total">$275</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-style" id="booking-btn">Book Now</button>
+        </div>
+
+    </div>
+    </main>
+    <!------------------------billing Area-------------------------->
+        <div id="payment-system" class="container p-5">
+            <form class="container" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Billing Address</h3>
+                        <p> <i class="fa fa-user"></i>Your Full Name</p>
+                        <input type="text" placeholder="Your Name Here" class="form-control" > <br>
+                        <p><i class="fa fa-envelope"></i> Email</p>
+                        <input  type="text" placeholder="Your Email Here" class="form-control" > <br>
+                        <p><i class="fas fa-phone-square-alt"></i> Mobile Number</p>
+                        <input  type="text" placeholder="Your Number Here" class="form-control" > <br>
+                        <p><i class="fas fa-address-card"></i> Address</p>
+                        <input  type="text" placeholder="Your Address Here" class="form-control" > <br>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                    <h2>Payment System</h2>
+                    <p>Total Payable</p>
+                    <div class="right">
+                        <p id="grand-total">$275</p>
+                    </div>
+                    <p> Accepted Cards</p>
+                    <i class="fab fa-cc-visa" ></i>
+                    <i class="fab fa-cc-amex" ></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-discover" ></i>
+                </div>
+                    <div>
+                      <p>Card Name</p>
+                        <input type="text" placeholder="Card Name" class="form-control" > <br>
+                        <p> Card Number</p>
+                        <input type="number" placeholder="ex: 2222-2222-2222-2222" class="form-control" > <br>
+                        <p> Exp Month</p>
+                        <input  type="date" placeholder="Month " class="form-control" > <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                              <p >Exp Year</p>
+                              <input type="text"placeholder="2018" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                              <p >CVV</p>
+                              <input type="text" placeholder="352" class="form-control"> <br>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </form>
+              <button class="btn-style" id="payment-confirm-btn"> Confirm</button>
+        </div>
+        
+        <!-------------------------Booking confirmation------------>
+        <div id="confirmation">
+            <div class="bus-booking-confirmation">
+                <h3>Thank You,Sir.</h3>
+                <p>Your booking has confirmed.Enjoy your journey.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, facilis.</p>
+                <p>Again Thank for choosing us.</p>
+                <button class="btn btn-success"><i class="fas fa-download"></i> Download Your Ticket Online Copy</button>
+            </div>
+        </div>
+
+
+
+    <!------------------------Thank You----------------------->
+
+    <script>
+
+        function handleBusRentChange(busRent, isIncrease) {
+              const busRentInput = document.getElementById(busRent + '-count');
+              const busRentCount = parseInt(busRentInput.value);
+              let busRentNewCount = busRentCount;
+              if( isIncrease == true){
+                 busRentNewCount = busRentCount + 1;
+              }
+              if ( isIncrease == false && busRentCount > 0){
+                 busRentNewCount = busRentCount - 1;
+              }
+        
+              busRentInput.value = busRentNewCount;
+              
+              let busRentTotal = 0;
+              if (busRent == 'economyClass') {
+                 busRentTotal = busRentNewCount * 100;
+              }
+              if (busRent == 'firstClass') {
+                 busRentTotal = busRentNewCount * 150;
+              }
+              document.getElementById(busRent + '-total').innerText = '$' + busRentTotal; 
+              calculateTotalRent();
+           }
+        
+        
+           function calculateTotalRent() {
+           
+              const economyClassCount = getInputValue('economyClass');
+              const firstClassCount = getInputValue('firstClass');
+        
+              const subTotal = economyClassCount * 100 + firstClassCount * 150;
+              document.getElementById('total-sub-rent').innerText = '$' + subTotal;
+        
+        
+              const tax = subTotal * 0.1;
+              const taxTotal = Math.ceil(tax);
+              document.getElementById('tax-amount').innerText = '$' + taxTotal;
+        
+              const grandTotal = subTotal + taxTotal;
+              document.getElementById('grand-total').innerText = '$' + grandTotal;
+           }
+        
+        
+           function getInputValue(busRent) {
+              const busRentInput = document.getElementById(busRent + '-count');
+              const busRentCount = parseInt(busRentInput.value);
+              return busRentCount;
+           }
+        
+        
+
+           // booking btn
+
+           
+
+
+
+          const bookingBtn = document.getElementById('booking-btn');
+          bookingBtn.addEventListener('click',function(){
+            const bookingArea = document.getElementById('booking-area');
+            bookingArea.style.display = 'none';
+            const paymentConfirmation = document.getElementById('payment-system');
+            paymentConfirmation.style.display = 'block';
+          })
+
+
+
+          const confirmBtn = document.getElementById('payment-confirm-btn');
+          confirmBtn.addEventListener('click',function(){
+            const confirmArea = document.getElementById('payment-system');
+            confirmArea.style.display = 'none';
+            const bookingConfirmation = document.getElementById('confirmation');
+            bookingConfirmation.style.display = 'block';
+          })
+
+        </script>
+</body>
+
+</html>
