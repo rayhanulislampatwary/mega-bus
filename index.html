@@ -42,100 +42,98 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
 
+                <div class="booking-form">
+                    <h3>Explore By Bus</h3>
 
-            
-            <div class="booking-form">
-                <h3>Explore By Bus</h3>
-
-                <div class="inputs">
-                    <div class="input-group">
-                        <label" for="">From</label>
-                        <input class="inp-style" type="text" name="" placeholder="Dhaka">
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label" for="">From</label>
+                            <input class="inp-style" type="text" name="" placeholder="Dhaka">
+                        </div>
+                        <div class="input-group">
+                            <label" for="">From</label>
+                            <input class="inp-style" type="text" name="" placeholder="Chittagone">
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label" for="">From</label>
-                        <input class="inp-style" type="text" name="" placeholder="Chittagone">
-                    </div>
-                </div>
 
-                <div class="inputs">
-                    <div class="input-group">
-                        <label" for="">Departure</label>
-                        <input class="inp-style" type="date" name="">
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label" for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Return</label>
+                            <input class="inp-style" type="date" name="">
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="">Return</label>
-                        <input class="inp-style" type="date" name="">
-                    </div>
-                </div>
 
 
 
 
 
-            <div class="inputs"> 
-                <div>
-                    <div>
-                        <label for="">First Class ($150)</label> <br>
-                        <div class="d-flex justify-content-center">
-                        <button onclick="handleBusRentChange('firstClass', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
-                        <input id="firstClass-count" type="text" class="form-control text-center" value="1">
-                        <button onclick="handleBusRentChange('firstClass', true)" class="btn btn-default"><i class="fas fa-plus"></i></button> <br>
-                    </div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <p>Total First Class Price</p>
-                        <h6 id="firstClass-total" class="total-tickat-price">$150</h6>
-                    </div>
-                 </div>
-                <div>
-                    <div>
-                        <label for="">Economy ($100)</label> <br>
-                            <div class="d-flex justify-content-center">
-                            <button onclick="handleBusRentChange('economyClass', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
-                            <input id="economyClass-count" type="text" class="form-control text-center" value="1">
-                            <button onclick="handleBusRentChange('economyClass', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
-                            <br>
+                    <div class="inputs"> 
+                        <div>
+                            <div>
+                                <label for="">First Class ($150)</label> <br>
+                                <div class="d-flex justify-content-center">
+                                <button onclick="handleBusRentChange('firstClass', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                <input id="firstClass-count" type="text" class="form-control text-center" value="1">
+                                <button onclick="handleBusRentChange('firstClass', true)" class="btn btn-default"><i class="fas fa-plus"></i></button> <br>
                             </div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                    <p>Total Economy Price</p>
-                    <h6 id="economyClass-total" class="total-tickat-price">$100</h6>
-                    </div>
-                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Total First Class Price</p>
+                                <h6 id="firstClass-total" class="total-ticket-price">$150</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="">Economy ($100)</label> <br>
+                                    <div class="d-flex justify-content-center">
+                                        <button onclick="handleBusRentChange('economyClass', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                        <input id="economyClass-count" type="text" class="form-control text-center" value="1">
+                                        <button onclick="handleBusRentChange('economyClass', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                        <br>
+                                    </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Total Economy Price</p>
+                                <h6 id="economyClass-total" class="total-ticket-price">$100</h6>
+                            </div>
+                        </div>
 
-            </div> 
+                    </div> 
 
-            <div class="calculations p-3">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
-                    </div>
-                    <div class="right">
-                        <p id="total-sub-rent">$250</p>
-                    </div>
-                </div>
+                    <div class="calculations p-3">
+                        <div class="amount">
+                            <div class="left">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="right">
+                                <p id="total-sub-rent">$250</p>
+                            </div>
+                        </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>VAT (10%) </p>
+                    <div class="amount">
+                        <div class="left">
+                            <p>VAT (10%) </p>
+                        </div>
+                        <div class="right">
+                            <p id="tax-amount">$25</p>
+                        </div>
                     </div>
-                    <div class="right">
-                        <p id="tax-amount">$25</p>
+                    <br>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p id="grand-total">$275</p>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <p id="grand-total">$275</p>
-                    </div>
-                </div>
+                <button class="btn-style" id="booking-btn">Book Now</button>
             </div>
-            <button class="btn-style" id="booking-btn">Book Now</button>
-        </div>
 
     </div>
     </main>
@@ -157,31 +155,31 @@
                     </div>
                     <div class="col-md-6">
                         <div>
-                    <h2>Payment System</h2>
-                    <p> Accepted Cards</p>
-                    <i class="fab fa-cc-visa" ></i>
-                    <i class="fab fa-cc-amex" ></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-discover" ></i>
-                </div>
-                    <div>
-                      <p>Card Name</p>
-                        <input type="text" placeholder="Card Name" class="form-control" > <br>
-                        <p> Card Number</p>
-                        <input type="number" placeholder="ex: 2222-2222-2222-2222" class="form-control" > <br>
-                        <p> Exp. Month</p>
-                        <input  type="text" placeholder="Month " class="form-control" > <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                              <p >Exp. Year</p>
-                              <input type="text"placeholder="2018" class="form-control">
-                            </div>
-                            <div class="col-md-6">
-                              <p >CVV</p>
-                              <input type="text" placeholder="352" class="form-control"> <br>
-                            </div>
-                          </div>
+                            <h2>Payment System</h2>
+                            <p> Accepted Cards</p>
+                            <i class="fab fa-cc-visa" ></i>
+                            <i class="fab fa-cc-amex" ></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-discover" ></i>
                         </div>
+                            <div>
+                                <p>Card Name</p>
+                                    <input type="text" placeholder="Card Name" class="form-control" > <br>
+                                <p> Card Number</p>
+                                    <input type="number" placeholder="ex: 2222-2222-2222-2222" class="form-control" > <br>
+                                <p> Exp. Month</p>
+                                    <input  type="text" placeholder="Month " class="form-control" > <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p >Exp. Year</p>
+                                        <input type="text"placeholder="2018" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p >CVV</p>
+                                        <input type="text" placeholder="352" class="form-control"> <br>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
               </form>
@@ -194,7 +192,7 @@
                 <h3>Thank You,Sir.</h3>
                 <p>Your booking has confirmed.Enjoy your journey.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, facilis.</p>
-                <p>Again Thank for choosing us.</p>
+                <p>Again Thanks for choosing us.</p>
                 <button class="btn btn-success"><i class="fas fa-download"></i> Download Your Ticket Online Copy</button>
             </div>
         </div>
@@ -203,8 +201,9 @@
 
     <!------------------------Thank You----------------------->
 
-    <script>
 
+    <!-----------------js------------------->
+    <script>
         function handleBusRentChange(busRent, isIncrease) {
               const busRentInput = document.getElementById(busRent + '-count');
               const busRentCount = parseInt(busRentInput.value);
@@ -258,10 +257,6 @@
 
            // booking btn
 
-           
-
-
-
           const bookingBtn = document.getElementById('booking-btn');
           bookingBtn.addEventListener('click',function(){
             const bookingArea = document.getElementById('booking-area');
@@ -270,7 +265,7 @@
             paymentConfirmation.style.display = 'block';
           })
 
-
+          // confirmation btn
 
           const confirmBtn = document.getElementById('payment-confirm-btn');
           confirmBtn.addEventListener('click',function(){
